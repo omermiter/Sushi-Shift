@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Sushi Shift</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Sushi Shift</h1>
+        <form>
+            <input id="name" type="text">
+            <label for="name">יוצר הדו"ח</label>
+            <br>
+            <input type="text" id="day">
+            <label for="day">יום</label>
+            <br>
+            <input type="number" id="daily">
+            <label for="daily">סה"כ יומי</label>
+            <br>
+            <input type="number" id="shift">
+            <label for="shift">סה"כ משמרת</label>
+            <br>
+            <input type="number" id="sitting">
+            <label for="sitting">בישיבה</label>
+            <br>
+            <input type="number" id="cust-avg">
+            <label for="cust-avg">ממוצע סועד</label>
+            <br>
+            <input type="number" id="cust-num">
+            <label for="cust-num">כמות סועדים</label>
+            <br>
+            <input type="number" id="tip-total">
+            <label for="tip-total">סה"כ טיפים</label>
+            <br>
+            <input type="number" id="tip-avg">
+            <label for="tip-avg">ממוצע טיפים</label>
+            <br>
+            <input type="number" id="tip-before">
+            <label for="tip-before">טיפים לפני</label>
+            <br>
+            <textarea name="sum" id="sum"></textarea>
+            <br>
+            <h2 class="waiters">מלצרים</h2>
+            <div class="waiter-cont">
+                <input type="text" id="waiter-name" class="waiter-name">
+                <label for="waiter-name">שם מלצר</label>
+                <input type="number" id="waiter-avg" class="waiter-avg">
+                <label for="waiter-avg"> ממוצע</label>
+                <input type="text" id="waiter-sum" class="waiter-sum">
+                <label for="waiter-sum">סיכום מלצר</label>
+            </div>
+            <br>
+            <input type="button" value="הוסף מלצר" id="add-waiter">
+            <br>
+            <h2 class="front-bar">בר קדמי</h2>
+            <div class="front-cont">
+                <input type="text" id="front-name" class="front-name">
+                <label for="front-name">שם ברמן</label>
+                <input type="number" id="front-avg" class="front-avg">
+                <label for="front-avg"> ממוצע</label>
+                <input type="text" id="front-sum" class="front-sum">
+                <label for="front-sum">סיכום ברמן</label>
+            </div>
+            <br>
+            <input type="button" value="הוסף ברמן" id="add-front">
+            <br>
+            <h2 class="back-bar">בר אחורי</h2>
+            <div class="back-cont">
+                <input type="text" id="back-name" class="back-name">
+                <label for="back-name">שם ברמן</label>
+                <input type="number" id="back-avg" class="back-avg">
+                <label for="back-avg"> ממוצע</label>
+                <input type="text" id="back-sum" class="back-sum">
+                <label for="back-sum">סיכום ברמן</label>
+            </div>
+            <br>
+            <input type="button" value="הוסף ברמן" id="add-back">
+            <br>
+            <h2 class="hostes">מארחות</h2>
+            <textarea class="hostes-sum"></textarea>
+            <br>
+            <h2 class="delivery">משלוחים</h2>
+            <textarea class="delivery-sum"></textarea>
+            <br>
+            <h2 class="sushi">סושימנים</h2>
+            <textarea class="sushi-sum"></textarea>
+            <br>
+            <h2 class="hot">מטבח חם</h2>
+            <textarea class="hot-sum"></textarea>
+            <br>
+            <input type="button" value="העתק" id="copy">
+        </form>
+    </div>
+    
+    <script src="./waiters.js"></script>
+    <script src="./front-bar.js"></script>
+    <script src="./back-bar.js"></script>
+    <script src="./copy.js"></script>
+</body>
+</html>
