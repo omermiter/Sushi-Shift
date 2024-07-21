@@ -26,10 +26,9 @@ addBackBtn.addEventListener("click", ()=> {
     backAvgLabel.innerHTML = "ממוצע";
     backAvgLabel.setAttribute("for", `back-avg${backNum}`);
 
-    const backSummeryInput = document.createElement("input");
+    const backSummeryInput = document.createElement("textarea");
     backSummeryInput.setAttribute("id", `back-sum${backNum}`);
     backSummeryInput.setAttribute("class", `back-sum`);
-    backSummeryInput.setAttribute("type", `text`);
 
     const backSummeryLabel = document.createElement("label");
     backSummeryLabel.innerHTML = "סיכום ברמן";

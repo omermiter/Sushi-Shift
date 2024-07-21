@@ -26,10 +26,9 @@ addFrontBtn.addEventListener("click", ()=> {
     frontAvgLabel.innerHTML = "ממוצע";
     frontAvgLabel.setAttribute("for", `front-avg${frontNum}`);
 
-    const frontSummeryInput = document.createElement("input");
+    const frontSummeryInput = document.createElement("textarea");
     frontSummeryInput.setAttribute("id", `front-sum${frontNum}`);
     frontSummeryInput.setAttribute("class", `front-sum`);
-    frontSummeryInput.setAttribute("type", `text`);
 
     const frontSummeryLabel = document.createElement("label");
     frontSummeryLabel.innerHTML = "סיכום ברמן";

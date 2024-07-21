@@ -28,8 +28,8 @@ copyBtn.addEventListener("click", () => {
 
 
     var report = `דו"ח אחמש: ${creator}\n${day}: ${dayDate}.${month}\n\n` + `סה"כ יומי: ${daily}\n` + `סה"כ משמרת: ${shift}\n` + `בישיבה: ${sitting}\n` 
-    + `ממוצע סועד: ${cust_avg}\n` + `כמות סועדים: ${cust_num}\n` + `סה"כ טיפים: ${tip_total}\n` + `טיפ ממוצע: ${tip_avg}\n` + `טיפ לפני: ${tip_before}\n\n` 
-    + `${summery}\n`;
+    + `ממוצע סועד: ${cust_avg}\n` + `כמות סועדים: ${cust_num}\n` + `סה"כ טיפים: ${tip_total}\n` + `טיפ ממוצע: ${tip_avg}%\n` + `טיפ לפני: ${tip_before}\n\n` 
+    + `${summery}\n\n\n`;
 
     
     report += "מלצרים:\n";
@@ -96,6 +96,11 @@ copyBtn.addEventListener("click", () => {
     const hot = document.querySelector(".hot-sum").value;
 
     report += `מטבח חם:\n${hot}\n\n`;
+
+
+    const gril = document.querySelector(".gril-sum").value;
+
+    report += `גריל:\n${gril}\n\n`
 
     navigator.clipboard.writeText(report);
 

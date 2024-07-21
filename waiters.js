@@ -26,10 +26,9 @@ addBtn.addEventListener("click", ()=> {
     waiterAvgLabel.innerHTML = "ממוצע";
     waiterAvgLabel.setAttribute("for", `waiter-avg${waiterNum}`);
 
-    const waiterSummeryInput = document.createElement("input");
+    const waiterSummeryInput = document.createElement("textarea");
     waiterSummeryInput.setAttribute("id", `waiter-sum${waiterNum}`);
     waiterSummeryInput.setAttribute("class", `waiter-sum`);
-    waiterSummeryInput.setAttribute("type", `text`);
 
     const waiterSummeryLabel = document.createElement("label");
     waiterSummeryLabel.innerHTML = "סיכום מלצר";
