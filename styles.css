@@ -79,7 +79,7 @@ input[type="text"], input[type="number"], textarea {
     border-radius: 4px;
     font-size: 1rem;
     transition: all 0.3s ease;
-    direction: ltr;
+    direction: rtl;
     background-color: #f8f8f8;
     margin: 10px;
     text-align: right;
