@@ -42,7 +42,7 @@ copyBtn.addEventListener("click", () => {
 
     for(var i = 0; i < waiterNames.length; i ++){
 
-        report += `${waiterNames[i].value}- (${waiterAvgs[i].value}) ${waiterSums[i].value}\n`;
+        report += `${waiterNames[i].value}- (${waiterAvgs[i].value}) ${waiterSums[i].value}\n\n`;
     }
 
 
